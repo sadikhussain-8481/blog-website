@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.connect(
-  "mongodb+srv://sadik123:Sad2020@cluster0.ybsqgyi.mongodb.net/blogDB",
+  "mongodb+srv://sadik123:Sad2020@cluster0.ybsqgyi.mongodb.net/?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
   }
